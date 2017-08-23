@@ -1,0 +1,14 @@
+<a href='/entries/new'>Post new entry</a>
+<h1> Entries </h1>
+
+<main role="main">
+    <ul class="entries">
+      <% @entries.each do |entry| %>
+      <li class="entry">
+        <span class="blog title"><a href='/entries/<%= entry.id %>'><h4><%= entry.title %></h4></a></span>
+      </li>
+      <% end %>
+    </ul>
+  </main>
+
+  <dir><a href="/entries/new">Post New</a></dir>
