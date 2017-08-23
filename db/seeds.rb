@@ -3,7 +3,7 @@ Tag.delete_all
 Entry.delete_all
 
 5.times do
-  Tag.create(name: Faker::GameOfThrones.house)
+  Tag.create(description: Faker::GameOfThrones.house)
 end
 
 10.times do

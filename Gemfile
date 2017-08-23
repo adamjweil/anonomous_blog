@@ -11,6 +11,7 @@ gem 'sinatra-contrib'
 # Use Thin for our web server
 gem 'thin'
 gem 'pry'
+gem 'pry-byebug'
 
 gem 'activerecord', '~> 5.0'
 gem 'activesupport', '~> 5.0'

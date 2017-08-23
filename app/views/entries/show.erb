@@ -1,0 +1,18 @@
+
+  <main role="main">
+    <dir>
+      <p>
+        <h3><%= @entry.title %><br></h3>
+        <%= @entry.body %><br>
+        <h5><%= @entry.author %></h5>
+      </p>
+    </dir>
+  </main>
+
+  <ul class="entry-links">
+    <a href="/entries/<%= @entry.id %>/edit" %>edit</a> |
+    <form action="/entries/<%= @entry.id %>" method="post">
+      <input id="hidden" type="hidden" name="_method" value="delete">
+      <input type="submit" value="Delete">
+    </form>
+  </ul>
