@@ -14,6 +14,7 @@ GEM
       tzinfo (~> 1.1)
     arel (7.1.4)
     backports (3.6.7)
+    byebug (9.0.6)
     coderay (1.1.1)
     concurrent-ruby (1.0.5)
     daemons (1.2.3)
@@ -30,6 +31,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.4.2)
+      byebug (~> 9.0)
+      pry (~> 0.10)
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
@@ -81,6 +85,7 @@ DEPENDENCIES
   faker (~> 1.7.3)
   pg (~> 0.18)
   pry
+  pry-byebug
   rake (~> 12.0.0)
   rspec (~> 3.5)
   shotgun

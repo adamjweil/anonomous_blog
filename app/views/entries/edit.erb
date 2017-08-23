@@ -1,0 +1,9 @@
+
+  <div class="container"><br>
+    <form method="post" action="/entries/<%= @entry.id %>">
+      <input type="hidden" name="_method" value="put">
+      <%= erb :'partials/_form' %>
+      <input type="submit" value="Update blog" class="button">
+      </form>
+    </main>
+  </div>

@@ -1,6 +1,6 @@
-class Entry < ActiveRecord::Base
-  validates :body, :title, presence: true
+ class Entry < ApplicationRecord
+   has_many :entry_tags
+   has_many :tags, through: :entry_tags
 
-  has_many :entry_tags
-  has_many :tags, through: :entry_tags
-end
+   validates :author, :body, :title, presence: true
+ end

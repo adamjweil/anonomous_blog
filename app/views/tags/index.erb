@@ -1,0 +1,10 @@
+ <main role="main">
+    <ul class="tags">
+      <% @tags.each do |tag| %>
+        <li class="tag">
+          <h3><%= tag.description %></h3>
+        </li>
+      <% end %>
+    </ul>
+  </main>
+  <dir><a href="/entries/new">create a blog</a></dir>

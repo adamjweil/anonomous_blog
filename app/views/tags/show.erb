@@ -1,0 +1,11 @@
+<h1>all entries for <%= @tag.description %></h1>
+
+ <main role="main">
+   <ul class="entries">
+      <% @tag.entries.each do |entry| %>
+        <li class="entry">
+          <span class="blog-title"><a href="/entries/<%= entry.id %>"><h3><%= entry.title %></h3></a></span>
+        </li>
+      <% end %>
+    </ul>
+  </main>
